@@ -1,0 +1,13 @@
+
+#ifndef SIMPLEPARTICLESYSTEM_RENDERIO_H
+#define SIMPLEPARTICLESYSTEM_RENDERIO_H
+
+#endif //SIMPLEPARTICLESYSTEM_RENDERIO_H
+
+
+
+class RenderIO{
+
+   virtual void render() = 0;
+
+};
