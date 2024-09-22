@@ -27,7 +27,9 @@ endif()
 
 # Our Project
 
-add_executable(${PROJECT_NAME} ../src/main.cpp ../include/Particle.h ../src/Particle.cpp ../include/ParticleSimulator.h)
+add_executable(${PROJECT_NAME} ../src/main.cpp ../include/Particle.h ../src/Particle.cpp ../include/ParticleSimulator.h
+        ../src/ParticleSimulator.cpp
+        ../include/UpdateIO.h)
 #set(raylib_VERBOSE 1)
 target_link_libraries(${PROJECT_NAME} raylib)
 

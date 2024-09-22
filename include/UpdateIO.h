@@ -1,8 +1,12 @@
-//
-// Created by Kacper Zimmer on 17/09/2024.
-//
 
 #ifndef SIMPLEPARTICLESYSTEM_UPDATEIO_H
 #define SIMPLEPARTICLESYSTEM_UPDATEIO_H
+
+
+class UpdateIO{
+
+public:
+    virtual void update() = 0;
+};
 
 #endif //SIMPLEPARTICLESYSTEM_UPDATEIO_H

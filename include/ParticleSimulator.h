@@ -5,13 +5,20 @@
 
 #include <vector>
 #include "Particle.h"
-class ParticleSimulator : public RenderIO {
+#include "UpdateIO.h"
 
+class ParticleSimulator : public RenderIO, public UpdateIO{
+
+private:
     std::vector<Particle> particleContainer{};
-
+    float timeBeforeUpdate{};
+    Vector2 initialPosition;
+    float radius{};
+    size_t containerSize;
+public:
     void render() override;
-
-    ParticleSimulator(size_t size);
+    void update() override;
+    ParticleSimulator(float radius, Vector2 initialPosition, size_t quantity);
 };
 
 
